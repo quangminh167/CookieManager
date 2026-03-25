@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <style>
+    body { width: 300px; padding: 15px; font-family: sans-serif; }
+    textarea { width: 100%; height: 150px; margin-bottom: 10px; font-size: 11px; }
+    .btn-group { display: flex; gap: 10px; }
+    button { flex: 1; padding: 8px; cursor: pointer; border: none; border-radius: 4px; color: white; }
+    #export { background-color: #2196F3; }
+    #import { background-color: #4CAF50; }
+    #status { margin-top: 10px; font-size: 12px; color: #666; }
+  </style>
+</head>
+<body>
+  <h3>Cookie Manager</h3>
+  <textarea id="cookieData" placeholder="Dán JSON cookie vào đây để Import hoặc nhấn Export..."></textarea>
+  <div class="btn-group">
+    <button id="export">Export JSON</button>
+    <button id="import">Import JSON</button>
+  </div>
+  <div id="status"></div>
+  <script src="popup.js"></script>
+</body>
+</html>
